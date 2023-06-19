@@ -1,0 +1,18 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#page_name {
+    margin-left: 5%;
+}
+.page_sub_name {
+    color: #79E0EE;
+}
+.navbar-nav{
+    margin: auto;
+ }
+#button_1 {
+    background-color: #79E0EE;
+    border-color: #79E0EE;
+}
+/* styling index.html */
+
