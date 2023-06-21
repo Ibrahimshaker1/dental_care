@@ -2,7 +2,75 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div class="div_1">
+    <div class="div_1" id="scrollspyHeading1">
         <img src="{% static 'image/female-dentist-with-dentistry-tools-isolated.jpg' %}" alt="dental_image" style="height:100%; width: 100%;">
+    </div>
+    <div class="div_2" id="scrollspyHeading2" style="width:30%; height:50%; margin-left:15%; margin-top:3%">
+        <div style="position: absolute; left: 10%;">
+            <p style="font-size: 20px">LET US BRIGHTEN<br>YOUR SMILE</p>
+            <p style="width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta.</p>
+            <a class="nav-item"><button type="button" class="btn btn-primary active" id="button_1" data-bs-toggle="button" aria-pressed="true">Make Appointment</button></a>
+        </div>
+        <div style="position: absolute; left:60%">
+            <p style="color: #79E0EE;">About Us</p>
+            <p><strong>True Healthcare For Your Family</strong></p>
+            <p style="width: 70%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta.</p>
+        </div>
+    </div>
+    <div class="div_3" id="scrollspyHeading3" style="background-color: #cfccd3; margin-top: 300px; padding-bottom:43px;">
+        <p style="text-align:center; font-size: 25px; padding-top: 50px;">OUR SERVICES</p>
+        <table id="myTable" style="margin-right: auto; margin-left: auto; border-collapse: separate; border-spacing: 1em 1em; width: 75%">
+            <tbody>
+                <tr>
+                    <td style="background-color: white;">
+                        <div>
+                            <img src="{% static 'image/Screenshot 2023-06-19 162842.png' %}" alt="image_2" style="height:30px; width:30px; margin-left: 47%; margin-top: 3%;">
+                            <p style="text-align:center;"><strong>Alignment Specialist</strong></p>
+                            <p style="margin-left:20%; width: 60%; text-align:center;">Lorem ipsum dolor sit amet,elit.</p>
+                        </div>
+                    </td>
+                    <td style="background-color: white;">
+                        <div>
+                            <img src="{% static 'image/image-3.png' %}" alt="image_2" style="height:30px; width:30px; margin-left: 47%; margin-top: 3%;">
+                            <p style="text-align:center;"><strong>Cosmetic Dentistry</strong></p>
+                            <p style="margin-left:20%; width: 60%; text-align:center;">Lorem ipsum dolor sit amet,elit.</p>
+                        </div>
+                    </td>
+                    <td style="background-color: white;">
+                        <div>
+                            <img src="{% static 'image/image-4.png' %}" alt="image_2" style="height:30px; width:30px; margin-left: 47%; margin-top: 3%;">
+                            <p style="text-align:center;"><strong>Oral Hygiene Experts</strong></p>
+                            <p style="margin-left:20%; width: 60%; text-align:center;">Lorem ipsum dolor sit amet,elit.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: white;">
+                        <div>
+                            <img src="{% static 'image/image-5.png' %}" alt="image_2" style="height:30px; width:30px; margin-left: 47%; margin-top: 3%;">
+                            <p style="text-align:center;"><strong>Root Canal Specialist</strong></p>
+                            <p style="margin-left:20%; width: 60%; text-align:center;">Lorem ipsum dolor sit amet,elit.</p>
+                        </div>
+                    </td>
+                    <td style="background-color: white;">
+                        <div>
+                            <img src="{% static 'image/image-6.png' %}" alt="image_2" style="height:30px; width:30px; margin-left: 47%; margin-top: 3%;">
+                            <p style="text-align:center;"><strong>Live Dental Advisory</strong></p>
+                            <p style="margin-left:20%; width: 60%; text-align:center;">Lorem ipsum dolor sit amet,elit.</p>
+                        </div>
+                    </td>
+                    <td style="background-color: white;">
+                        <div>
+                            <img src="{% static 'image/image-7.png' %}" alt="image_2" style="height:30px; width:30px; margin-left: 47%; margin-top: 3%;">
+                            <p style="text-align:center;"><strong>Cavity Inspection</strong></p>
+                            <p style="margin-left:20%; width: 60%; text-align:center;">Lorem ipsum dolor sit amet,elit.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="div_4">
+        <p style="text-align:center; font-size: 25px"><strong>WORK PROCESS</strong></p>
     </div>
 {% endblock %}
