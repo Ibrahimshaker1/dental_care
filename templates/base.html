@@ -17,7 +17,7 @@
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top" style="position: fixed; width:100%; z-index:9999;">
           <div class="container-fluid">
-            <a class="navbar-brand" id="page_name" href="#"><strong>Dental<span class="page_sub_name">Care</span></strong></a>
+            <a class="navbar-brand" id="page_name" href="{% url 'HomePage' %}"><strong>Dental<span class="page_sub_name">Care</span></strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,6 +38,18 @@
                 <li class="nav-item">
                   <a class="nav-link" id="nav_item_6" href="#scrollspyHeading5">Contact</a>
                 </li>
+                {% if user.is_authenticated %}
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'accounts:Logout' %}">Logout</a>
+                  </li>
+                {% else %}
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'signup_page' %}">Signup</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'accounts:Login' %}">Login</a>
+                  </li>
+                {% endif %}
               </ul>
             </div>
               <a class="nav-item"><button type="button" class="btn btn-primary active" id="button_1" data-bs-toggle="button" aria-pressed="true">Make Appointment</button></a>

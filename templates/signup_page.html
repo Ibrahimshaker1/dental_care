@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="div_1" style="padding-top: 56px;  position: absolute; left:0px;">
+        <div style="display: grid; align-items: center; grid-template-columns: 1fr 1fr;">
+            <div>
+                <!--make two div on for cline and the other for doc.-->
+            </div>
+            <div>
+                <img src="{% static 'image/dental.jpg' %}" alt="dental_image" style="height: 100%; width: 100%; clip-path: circle(76.8% at 83% 47%);">
+            </div>
+        </div>
+    </div>
+{% endblock %}
