@@ -52,7 +52,9 @@
                 {% endif %}
               </ul>
             </div>
-              <a class="nav-item"><button type="button" class="btn btn-primary active" id="button_1" data-bs-toggle="button" aria-pressed="true">Make Appointment</button></a>
+              <a class="nav-item" href="{% url 'accounts:appointment' %}">
+                  <button type="button" class="btn btn-primary active" id="button_1" aria-pressed="true">Make Appointment</button>
+              </a>
           </div>
         </nav>
         <div class="content">

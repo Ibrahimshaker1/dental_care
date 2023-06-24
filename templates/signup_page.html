@@ -2,12 +2,17 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div class="div_1" style="padding-top: 56px;  position: absolute; left:0px;">
-        <div style="display: grid; align-items: center; grid-template-columns: 1fr 1fr;">
+    <div class="div_1" style="padding-top: 56px;  position: absolute; left:0px; height: 100%;">
+        <div style="display: grid; align-items: center; grid-template-columns: 1fr 1fr; height: 100%;">
             <div>
-                <!--make two div on for cline and the other for doc.-->
+                <div style="text-align: center; padding-bottom: 45%">
+                    <a href="{% url 'accounts:Signup' %}"><button type="button" class="btn btn-secondary btn-lg" style="width: 33%">Signup As Cline</button></a>
+                </div>
+                <div style="text-align: center;">
+                    <a href="{% url 'accounts:doc_signup' %}"><button type="button" class="btn btn-secondary btn-lg" style="width: 33%">Signup As Doctor</button></a>
+                </div>
             </div>
-            <div>
+            <div style="height: 100%;">
                 <img src="{% static 'image/dental.jpg' %}" alt="dental_image" style="height: 100%; width: 100%; clip-path: circle(76.8% at 83% 47%);">
             </div>
         </div>

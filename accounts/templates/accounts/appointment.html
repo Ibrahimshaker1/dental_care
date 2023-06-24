@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% block content %}
+<div class="container" style="padding-top: 78px;">
+    {% if user.is_authenticated %}
+        <h1 style="text-align:center;">Make Appointment</h1>
+        <form method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <input type="submit" class="btn btn-default" value="Make Appointment" style="margin-top: 14px; background-color: #79e0ee">
+        </form>
+    {% else %}
+        <h3>Pleas Login or Signup!</h3>
+    {% endif %}
+</div>
+{% endblock %}
